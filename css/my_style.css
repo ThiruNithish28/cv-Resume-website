@@ -1,4 +1,6 @@
-
+:root{
+    --btm-blur-color:#523680;
+}
 a{
     text-decoration: none;
 }
@@ -51,15 +53,15 @@ a{
     position: absolute;
     inset:0;
     z-index: -1;
-    transition :filter .4s, background-color .6s;
+    transition :filter .9s, background-color .5s;
 }
 .btn-blur:hover::before{
     filter: blur(.8em);
-    background-color: #6200EE;
+    background-color:var(--btm-blur-color);
 }
 .btn-blur:hover::after{
-    filter: blur(.5em);
-    background-color: #6200EE;
+    filter: blur(.8em);
+    background-color:var(--btm-blur-color);
 }
 
 
@@ -69,27 +71,27 @@ a{
 .fill-right,
 .fill-top,
 .fill-bottom{
-   box-shadow:inset 0 0 0 #6200EE;
+   box-shadow:inset 0 0 0 var(--btm-blur-color);
   transition:color .7s ease-in-out,box-shadow .6s ease-in;
 }
 .fill-left:hover{
   border:0px;
-  box-shadow:inset 200px 0 0 #6200EE;
+  box-shadow:inset 300px 0 0 var(--btm-blur-color);
   color:white;
 }
 .fill-right:hover{
   border:0px;
-  box-shadow:inset -200px 0 0 #6200EE;
+  box-shadow:inset -300px 0 0 var(--btm-blur-color);
   color:black;
 }
 .fill-top:hover{
   border:0px;
-  box-shadow:inset 0 200px 0 #6200EE;
+  box-shadow:inset 0 300px 0 var(--btm-blur-color);
   color:black;
 }
 .fill-bottom:hover{
   border:0px;
-  box-shadow:inset 0 -200px 0 white;
+  box-shadow:inset 0 -300px 0 white;
   color:black;
 }
 

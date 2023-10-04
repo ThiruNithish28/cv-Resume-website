@@ -43,7 +43,7 @@ $(".btn_nav").click(function () {
 
 //   hanberge menu 
 
-const navList = document.querySelector(".nav-lists");
+const navList = document.querySelector(".mobile-nav-lists");
 const navListLinks = document.querySelector(".nav-lists-links")
 const navToggle = document.querySelector(".menu-toggle");
 

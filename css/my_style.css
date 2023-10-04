@@ -141,7 +141,7 @@ a{
 /* ------ */
 @media only screen and (max-width: 481px){
     body{
-        text-align: center;
+        /* text-align: center; */
     }
     .d-flex{
         flex-wrap: wrap;

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thiru</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
 
@@ -15,9 +16,9 @@
 
 <body class="d-grid">
     <nav class="nav__bar mobile-nav ">
-        <div>
+        <div class="d-flex"> 
             <div class="nav-img">
-                <img src="" alt="">
+                <img src="/image/my-image.jpg" alt="dp">
             </div>
             <div class="name-in-nav">
                 <h2>thiru</h2>
@@ -25,16 +26,17 @@
         </div>
 
         <button aria-controls="nav-lists" aria-expanded="false" class="menu-toggle"></button>
+
         <div id="nav-lists" class="mobile-nav-lists" data-visible="false">
-            
-                <ul>
-                    <li><a href="#landing" class="nav-lists-links">home</li>
-                    <li><a href="about.html" class="nav-lists-links">about</a></li>
-                    <li><a href="mailto:thirunithish07@gmail.com" class="nav-lists-links">contact </a></li>
-                    <li><a href="" target="_blank" class="nav-lists-links">resume</a></li>
-                    <li><a href="project.html" class="nav-lists-links">Protfolio</a></li>
-                </ul>
- 
+            <ul>
+                <li><a href="#about-section" class="about__link nav-lists-links">about</li>
+                <li><a href="#resume" class="resume__link nav-lists-links">resume</a></li>
+                <li><a href="#contact" class=" contact__link nav-lists-links">contact </a></li>
+                <li><a href="https://thirunithish28.github.io/protfolio/" target="_blank" class="nav-lists-links">more
+                        about me</a></li>
+                <li><a href="#work" class="work__link nav-lists-links">Protfolio</a></li>
+            </ul>
+
         </div>
     </nav>
     <div class="side-nav ">
@@ -47,19 +49,25 @@
         <div class="nav-menu">
             <ul>
                 <li class="btn_nav about__link"><a href="#about">about me</a></li>
-                <li class="btn_nav resume__link"><a href="#resume" class="click-resume">resume</a></li>
+                <li class="btn_nav resume__link"><a href="#resume">resume</a></li>
                 <li class="btn_nav work__link"><a href="#work">portfolio</a></li>
                 <li class="btn_nav contact__link"><a href="#contact">contact</a></li>
-                <li><a href="https://thirunithish28.github.io/protfolio/">get more</a></li>
+                <li><a href="https://thirunithish28.github.io/protfolio/" target="_blank">more about me</a></li>
             </ul>
         </div>
         <div class="nav-search">
             <input type="search" placeholder="Search">
         </div>
         <div class="nav-social-links d-flex">
-            <li><a href="">1</a></li>
-            <li><a href="">2</a></li>
-            <li><a href="">3</a></li>
+            <li><a href="https://www.instagram.com/mr_thiru__49/" target="_blank" class="social-ls "><i class='bx bxl-instagram bx-fade-up-hover '
+                style='color:grey'></i></a>
+          </li>
+          <li><a href="#" target="_blank" class="social-ls "><i class='bx bxl-twitter bx-fade-up-hover ' style='color:grey'></i></a>
+          </li>
+          <li><a href="https://www.linkedin.com/in/thirumavalavan-p-196872248/" target="_blank" class="social-ls"><i class='bx bxl-linkedin-square bx-fade-up-hover'
+                style='color:grey'></i></a></li>
+          <li><a href="https://github.com/ThiruNithish28" target="_blank" class="social-ls"><i class='bx bxl-github bx-fade-up-hover ' style='color:grey'></i></a>
+          </li>
         </div>
     </div>
     <!-- wrappper  -->
@@ -87,8 +95,8 @@
 
                                 </div>
                                 <div class="right">
-                                    <h4>computer science & Business Systems</h4><br>
-                                    <p>K. Ramakrishnan College of Engineering<br> Current CGPA: 7.57</p>
+                                    <h4>computer science & Business Systems</h4>
+                                    <p>K. Ramakrishnan College of Engineering Current CGPA: 7.57</p>
                                 </div>
                             </div>
 
@@ -265,13 +273,13 @@
         </section>
         <!-- protfolio section -->
         <section id="work" class="work page__style">
-            <div class="container">
+            <div class="container ">
                 <div class="heading d-flex-col">
                     <h2>portfolio</h2>
                     <p class="sub-title">works</p>
                 </div>
                 <div class="works-list">
-                    <div class="work-1 d-flex-col">
+                    <div class="work-1">
                         <img src="./image/portfolio.png" alt="to-do-list website">
                         <div class="works-detail">
                             <h6>own portfolio site</h6>
@@ -300,7 +308,7 @@
                         </div>
                     </div>
                     <div class="work-2 d-flex-col">
-                        <img src="./image/to-do-list.png" alt="tocomm video conference website">
+                        <img src="./image/tocomm.png" alt="tocomm video conference website">
                         <div class="works-detail">
                             <h6>tocomm</h6>
                             <p>develope a video conference website.this project utilizing my expertise in HTML,
@@ -314,75 +322,78 @@
 
         </section>
         <!-- contact section -->
-        <section id="contact" class="contact-sec p-1e page__style">
-            <div class="heading d-flex-col">
-                <h2>contact</h2>
-                <p class="sub-title">get in touch</p>
-            </div>
-            <div class="goolge-map">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3919.809359513008!2d79.11477007410443!3d10.749171259697771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTDCsDQ0JzU3LjAiTiA3OcKwMDcnMDIuNCJF!5e0!3m2!1sen!2sin!4v1696233885996!5m2!1sen!2sin"
-                    width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-
-            <div class="container">
-                <div class="contact-details">
-                    <ul class="d-flex ">
-                        <li class="d-flex-col g-1e">
-                            <img src="./svg/phone.svg" alt="phone icon">
-                            <p>7094335638</p>
-                        </li>
-                        <li class="d-flex-col g-1e">
-                            <img src="./svg/location.svg" alt="address">
-                            <p>thanjavur</p>
-                        </li>
-                        <li class="d-flex-col g-1e">
-                            <img src="./svg/mail.svg" alt="mail icon">
-                            <p>thirunithish07@gmail.com</p>
-                        </li>
-                        <li class="d-flex-col g-1e">
-                            <img src="./svg/freelance.svg" alt="freelance">
-                            <p>freelance available</p>
-                        </li>
-                    </ul>
+        <section id="contact" class="contact-sec  page__style">
+            <div class="page__descrption p-1e">
+                <div class="heading d-flex-col">
+                    <h2>contact</h2>
+                    <p class="sub-title">get in touch</p>
                 </div>
-            </div>
+                <div class="goolge-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3919.809359513008!2d79.11477007410443!3d10.749171259697771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTDCsDQ0JzU3LjAiTiA3OcKwMDcnMDIuNCJF!5e0!3m2!1sen!2sin!4v1696233885996!5m2!1sen!2sin"
+                        width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
 
-            <div class="contact-form-container">
-                <h3>how can i help you</h3>
-                <div>
-                    <form action="" class="contact-form ">
-                        <div>
-                            <div class="name">
-                                <input type="text" id="full-name" name="name" required="required">
-                                <span class="floating-heading">full name</span>
-                            </div>
-                            <div class="email">
-                                <input type="text" id="e-mail" name="mail address" required="required">
-                                <span class="floating-heading">e-mail</span>
-                            </div>
-                            <div class="subject">
-                                <input type="text" name="subjet" required="required">
-                                <span class="floating-heading">subject</span>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="msg">
-                                <textarea name="msg"></textarea>
-                                <span class="floating-heading" id="msg-span">message</span>
-                            </div>
-                        </div>
-                    </form>
-                    <div class="buttons">
-                        <div class="robot">
+                <div class="container">
+                    <div class="contact-details">
+                        <ul class="d-flex ">
+                            <li class="d-flex-col g-1e">
+                                <img src="./svg/phone.svg" alt="phone icon">
+                                <p>7094335638</p>
+                            </li>
+                            <li class="d-flex-col g-1e">
+                                <img src="./svg/location.svg" alt="address">
+                                <p>thanjavur</p>
+                            </li>
+                            <li class="d-flex-col g-1e">
+                                <img src="./svg/mail.svg" alt="mail icon">
+                                <p>thirunithish07@gmail.com</p>
+                            </li>
+                            <li class="d-flex-col g-1e">
+                                <img src="./svg/freelance.svg" alt="freelance">
+                                <p>freelance available</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
 
-                        </div>
-                        <div class="btn btn-blur submit-btn">
-                            send message
+                <div class="contact-form-container">
+                    <h3>how can i help you</h3>
+                    <div>
+                        <form action="" class="contact-form ">
+                            <div>
+                                <div class="name">
+                                    <input type="text" id="full-name" name="name" required="required">
+                                    <span class="floating-heading">full name</span>
+                                </div>
+                                <div class="email">
+                                    <input type="text" id="e-mail" name="mail address" required="required">
+                                    <span class="floating-heading">e-mail</span>
+                                </div>
+                                <div class="subject">
+                                    <input type="text" name="subjet" required="required">
+                                    <span class="floating-heading">subject</span>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="msg">
+                                    <textarea name="msg"></textarea>
+                                    <span class="floating-heading" id="msg-span">message</span>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="buttons">
+                            <div class="robot">
+
+                            </div>
+                            <div class="btn btn-blur submit-btn">
+                                send message
+                            </div>
                         </div>
                     </div>
                 </div>
+
             </div>
 
         </section>
@@ -406,7 +417,7 @@
                         that technology has the power to transform lives and make the world a better place. With every
                         project, I strive to blend functionality with aesthetics, delivering solutions that are not only
                         efficient but also visually captivating.</p>
-                    <div class="btn  btn-blur fill-left call-2-action ">download resume</div>
+                    <div class="btn  btn-blur fill-left call-2-action "><a href="Thirumavalavan_InternshalaResume.pdf" target="_blank">download resume</a></div>
                 </div>
             </div>
             <div class="what-i-do">
@@ -425,6 +436,10 @@
                 </div>
 
             </div>
+            <div class="fotter-link">
+                <a class="main-link"  href="https://thirunithish28.github.io/protfolio/" target="_blank">click this to more about me </a>
+            </div>
+            
         </main>
 
     </div>
